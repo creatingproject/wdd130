@@ -23,3 +23,14 @@ footer {
     background-color: steelblue;
     color: white;
 }
+/* we can target in css the class name that we added in html to change the size of the paragraph in main section*/
+.main-para {
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+#active {
+    background-color: white;
+    color: steelblue;
+    
+}
