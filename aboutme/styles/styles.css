@@ -1,36 +1,66 @@
-body {
+/*body {
     text-align: center;
-}
+}*/
 nav {
     background-color: steelblue;
     padding: 10px;
+    text-align: center;
 }
 a {
     color: white;
     margin: 40px;
+    font-size: 1.5em;
 }
 h1 {
     color: steelblue;
+    text-align: center;
 }
 img {
-    width: 800px;
+    width: 80%; /*i change from 800px to 80%*/
     border: 4px solid steelblue;
+    display: block;/*I added display and margin to center the image, because with text-align it doesn`t work because the image has no space inside container*/
+    margin: 0 auto;
 }
 p {
+    width: 80%; /*i added width*/
     padding: 10px;
 }
 footer {
     background-color: steelblue;
     color: white;
+    text-align: center;
 }
+
+/*footer p{ 
+    background-color: red;
+    text-align: center;
+    width: 100%;  this is to center all the ps, because if i add in footer, all elemts will center, we have to add width too. p es 80% but all the container is 100% 
+}*/
 /* we can target in css the class name that we added in html to change the size of the paragraph in main section*/
 .main-para {
     font-size: 1.5em;
     line-height: 1.5em;
+    width: 80%;
 }
 
 #active {
     background-color: white;
-    color: steelblue;
-    
+    color: steelblue;   
+}
+
+/** {
+    border: 2px solid blue;
+} i added this to border the containers and spaces*/
+main p {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+footer p {
+    font-size: 20px;/*i added to style the p of footer (more specific), we gave a new font-size*/
+    margin: 20px auto;
+}
+a:hover {
+    background-color: white;
+    color: steelblue; /*i added the a:hover pseudo-class to apply the style when the user hovering their mouse pointer over the elemente,it change the color, no for "active" (home) because it has an ID, ya esta con fondo blanco, el resto si cambia */
 }

@@ -1,0 +1,83 @@
+body{
+    background-color: pink;
+    color: white;
+}
+
+main{
+    width: 40%;
+    height: 850px;
+    background-color: red;
+    margin: 0 auto;
+    text-align: center;
+}
+ol{
+    background-color: blue;
+    color: black;
+    padding-left:20px; 
+}
+ol li{
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
+    text-align: center;
+    background-color: rgb(250, 180, 221);
+    color:white
+}
+h1 {
+    color:white;
+    font-size: 60px;
+    font-family: sans-serif;
+}
+h1:hover {
+    color: black;
+}
+.belowedu {
+    width: 450px;
+    margin: 0 auto;
+}
+ 
+ .numbers {
+    width: 450px;
+    padding:10px;
+    margin:0 auto;
+    color:black;
+    font-size: 18px;
+    font-family:sans-serif;
+    font-weight: bold;
+    text-align: left;
+ }
+
+ img {
+    width:230px;
+    padding: 20px;
+ }
+
+ .speech {
+    padding: 20px;
+    font-size: 45px;
+    width: 400px;
+    margin:0 auto;
+    text-align: senter;
+ }
+ .last{
+    color: black;
+    font-size: 18px;
+    width: 400px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    font-weight: bold;
+ } */
