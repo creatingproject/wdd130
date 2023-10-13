@@ -1,0 +1,24 @@
+img {
+    width:100%;
+    display:block;
+
+}
+.center {
+    display: inline;
+    width:20%;
+    border-radius: 50%;
+    border: 10px solid rgb(65, 61, 61);
+    margin:30px;
+}
+.container {
+    text-align: center;
+    background-color: rgb(122, 119, 119);
+    padding-top: 10px;
+    padding-bottom:15px;
+}
+body{
+    margin:0
+}
+
+
+
