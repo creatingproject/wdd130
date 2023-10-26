@@ -42,7 +42,7 @@ header {
     /*I'm adding the grid */
     display: grid;
     grid-template-columns: 150px auto;
-   /*I'm adding for my own the opacity*/
+   /*I'm adding the opacity on my own */
    opacity: .8;
 
 }
@@ -211,6 +211,7 @@ nav {
     grid-row: 5/8;
     box-shadow: 5px 5px 10px #6f7364;
 }
+
 
 
 
