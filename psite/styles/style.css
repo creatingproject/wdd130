@@ -24,6 +24,7 @@ header {
     grid-template-columns: 150px auto;
    /*I'm adding the opacity on my own */
    opacity: .95;
+   width: 100%;
 
 }
 nav a:hover {
@@ -38,8 +39,6 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-
 }
 
 
@@ -53,12 +52,14 @@ nav a{
 h4 {
     color: black;
 }
+
 .home-grid, .home-para{
     width: 80%;
     color:#09BC8A;
     text-align: center;
     margin: 0 auto;
     padding: 50px 100px;  
+
 }
 
 .main-grid{
@@ -68,11 +69,13 @@ h4 {
     width: 85%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto 1fr;
+    position: relative;
 }
 .home-para{
     grid-column: 1/2;
     grid-row: 2/3;
     line-height: 1.5em;
+   
 }
 .photo-design{
     
@@ -274,153 +277,12 @@ footer .social img {/*it was changed*/
     padding-top: 15px;
 }
 
-/* .rivers-card, .camping-card, .rapids-card{
-    margin:200px 0;
-}
-.card-img{
-    border:10px solid #f07167;
-    /*adding a half-second transition 0.5*/
-    /* transition: transform .5s; */
-    /*adding a shadow*/
-    /* box-shadow: 5px 5px 10px #6f7364;
-} 
- .card-img:hover{
-    /*it change a opacity when hover over the images*/
-    /* opacity:.6; */
-    /* transform:scale(1.1);
- } */
-/* main section img{
-    box-sizing: border-box;
-}*/
 
 nav { /*it was changed, organized the nav links*/
     display:flex;
     justify-content: space-around;
 }
 
-/* #hero{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    margin-top:-100px; 
-}*/
-
-/* #hero-box{
-    grid-column: 1/4;
-    grid-row: 1/3;
-    z-index: -1;
-}
-#hero-msg{
-    grid-column: 2/3;
-    grid-row: 1/2;
-    margin-top:100px;
-}
-#hero-msg h4{
-    color: white;
-}
-#hero-msg h1{
-    color:#fed9b7;
-} */
-
-/* .home-grid{
-    display: grid;
-    grid-template-columns: repeat(10, 1fr)
-} */
-/* .card-img, .mountains{
-    width: 100%;
-}
-.rivers-card{
-    grid-column: 2/4;
-    grid-row: 2/3;
-}
-.camping-card{
-    grid-column: 5/7;
-    grid-row: 2/3;
-}
-.rapids-card{
-    grid-column: 8/10;
-    grid-row: 2/3;
-}
-.mountains{
-    grid-column: 2/7;
-    grid-row: 5/8;
-    box-shadow: 5px 5px 10px #6f7364;
-} */
-
-
-
-
-
-
-
-/* adding new styles for subpage Rivers.html*/
-/*if we want to wrap do not use grid, just float:right or left*/
-/* #river-title{
-    text-align: center;
-    margin:50px auto 80px;
-    font-size:1.5em;
-    color:#0081a7;
-    font-family: 'rock salt', 'Arial black', sans-serif;
-
-}
-.img-right, .img-left{
-    border:10px solid #fed9b7;
-    box-shadow: 5px 5px 10px grey;
-    width: 45%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.img-right{
-    float: right;
-    margin-left:40px;
-    margin-right: 70px;
-
-}
-.img-left{
-    float: left;
-    margin-left:70px;
-    margin-right: 50px
-    
-}
-
-
-.river-p1, .river-p2, .river-p3{
-  max-width: 100%;
-  height: auto;
-  padding: 20px 20px;
-  text-align: justify;
-  font-size: 22px;
-  line-height:1.5em;
-  margin-bottom: 8%;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.river-p2{
-    height: auto;
-}
-#river-main{
-    max-width: 1200px;
-    margin:auto;
-    
-}
-
-.river-subtitle1{
-    font-size: 1.2em;
-    text-align: left;
-    width: 30%;
-    margin-left:70px;
-
-}
-.river-subtitle2{
-    font-size: 1.2em;
-    text-align: right;
-    width: 30%;
-    margin-left:auto;
-    margin-right:70px;
-
-
-} */
 
 /*adding FORMS*/
 form {
@@ -459,6 +321,7 @@ textarea {
   /* Match form field borders */
   border: 1px solid #999;
 }
+
 input:focus,
 textarea:focus {
   /* Additional highlight for focused elements */
@@ -497,6 +360,96 @@ textarea {
 .moveDown {
     margin-top: 3em;
 }
+
+
+
+
+
+/*CREATING COMPONENT*/
+/* Style the Image Used to Trigger the Modal */
+.photo-me {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .photo-me:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 50%;
+    max-width: 400px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+
+
+
+
 
 
 
