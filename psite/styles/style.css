@@ -179,17 +179,17 @@ h4 {
 
 .benefits-grid{
     width: 40%;
-    margin:50px auto;
+    margin:10% auto;
     margin-bottom: 200px;
     grid-column: 1/2;
     grid-row: 3/4;
-    /* align-items:center; */
     display: grid;
     grid-template-columns: 6fr 1fr 2fr 2fr 3fr;
     grid-template-rows: 0.5fr 4fr 0.5fr 1fr 1fr;
     transform:rotate(-45deg);
 
 }
+
 .benefits-grid:hover{
     transform:rotate(0deg);
 }
@@ -471,6 +471,10 @@ textarea {
     text-decoration: none;
     cursor: pointer;
   }
+
+
+
+
   
   /* 100% Image Width on Smaller Screens */
   @media only screen and (max-width: 700px){
@@ -480,26 +484,12 @@ textarea {
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 900px) {
     .home-grid {
         display: block;
         height: auto;
+        font-size: 25px;
+        color: white; /*it was changed*/
     }
 
     nav, footer {
@@ -509,31 +499,16 @@ textarea {
         display: block;
         padding: 15px;
     }
-    #hero {
-        margin-top: 0;
-    }
-    #hero-msg {
-        margin-top: 0;
-    }
-    #hero-msg h4 {
-        display: none;
-    }
-    .home-grid {
-        font-size: 25px;
-        color: white; /*it was changed*/
-    }
-    .rivers-card, .camping-card, .rapids-card { 
-        margin: 50px auto;
-        width: 60%;
-    }
-    #background {
-        display: none;
-    }
-    .mountains, .msg {
-        width: 80%;
+    
+    .benefits-main-grid{
         display: block;
-        margin: 0 auto;
+        height: auto;
     }
+    .benefits-grid{
+        height: auto;
+
+    }
+
     footer {
         margin-top: 25px;
     }
